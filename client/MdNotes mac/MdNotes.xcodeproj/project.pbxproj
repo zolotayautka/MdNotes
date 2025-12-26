@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CE57A2342EFF4EBD00D4CF35 /* Ink in Frameworks */ = {isa = PBXBuildFile; productRef = CE57A2332EFF4EBD00D4CF35 /* Ink */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		CE32830C2EFF2AA400150562 /* MdNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MdNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE57A2342EFF4EBD00D4CF35 /* Ink in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = MdNotes;
 			packageProductDependencies = (
+				CE57A2332EFF4EBD00D4CF35 /* Ink */,
 			);
 			productName = MdNotes;
 			productReference = CE32830C2EFF2AA400150562 /* MdNotes.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = CE3283032EFF2AA400150562;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CE57A2322EFF4EBD00D4CF35 /* XCRemoteSwiftPackageReference "ink" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CE32830D2EFF2AA400150562 /* Products */;
 			projectDirPath = "";
@@ -325,6 +334,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE57A2322EFF4EBD00D4CF35 /* XCRemoteSwiftPackageReference "ink" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/johnsundell/ink";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE57A2332EFF4EBD00D4CF35 /* Ink */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE57A2322EFF4EBD00D4CF35 /* XCRemoteSwiftPackageReference "ink" */;
+			productName = Ink;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE3283042EFF2AA400150562 /* Project object */;
 }
